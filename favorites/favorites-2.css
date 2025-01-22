@@ -1,1 +1,17 @@
+.cc-favourites .cover .image-decor {
+  background-color: #913967;
+  border-radius: 0;
+  transition: .2s ease-in;
+}
 
+.cc-favourites .cover .image-decor .image-cutter {
+  border-radius: 0;
+  transition: .2s ease-in;
+}
+
+.cc-favourites .cover .image-decor:hover .image-cutter {
+  transform: translateY(-8px) translateX(8px);
+  transition: 0.2s ease-in;
+  box-shadow: 0px 0px 0px 0px #000;
+  z-index: 11;
+}
