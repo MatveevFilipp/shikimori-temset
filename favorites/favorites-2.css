@@ -1,17 +1,52 @@
+:root{
+  --profile-bg-color: #913967;
+}
+
 .cc-favourites .cover .image-decor {
-  background-color: #913967;
   border-radius: 0;
-  transition: .2s ease-in;
+}
+
+#profiles_show .cc-favourites .c-column {
+  padding: 0 4px !important;
 }
 
 .cc-favourites .cover .image-decor .image-cutter {
   border-radius: 0;
-  transition: .2s ease-in;
+  transition: all 0.2s ease-in;
+  overflow: visible;
+}
+
+.cc-favourites .cover .image-decor .image-cutter picture {
+  position: relative;
+  z-index: 12;
 }
 
 .cc-favourites .cover .image-decor:hover .image-cutter {
-  transform: translateY(-8px) translateX(8px);
-  transition: 0.2s ease-in;
-  box-shadow: 0px 0px 0px 0px #000;
+  transform: translateY(-5%) translateX(5%);
+  box-shadow: 0;
   z-index: 11;
+}
+
+#profiles_show .cc-favourites .cover .image-decor img {
+  transform: scale(1);
+}
+
+.cc-favourites .cover .image-decor .image-cutter::before {
+  content: "";
+  background-color: var(--profile-bg-color);
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transition: 0.2s ease-in;
+  clip-path: polygon(5% 0, 100% 0, 100% 95%, 100% 100%, 0 100%, 0 0);
+}
+
+.cc-favourites .cover .image-decor:hover .image-cutter::before {
+  height: 105%;
+  width: 105%;
+  left: -5%;
+  top: 0.2%;
+  clip-path: polygon(5% 0, 100% 0, 100% 95%, 95% 100%, 0 100%, 0 5%);
 }
