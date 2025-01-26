@@ -6,10 +6,6 @@
   border-radius: 0;
 }
 
-#profiles_show .cc-favourites .c-column {
-  padding: 0 4px !important;
-}
-
 .cc-favourites .cover .image-decor .image-cutter {
   border-radius: 0;
   transition: all 0.2s ease-in;
