@@ -1,0 +1,25 @@
+/* логотип */
+.l-top_menu-v2 .logo-container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo-container-a logo-container-b"
+    "logo-container-a logo-container-c";
+}
+
+.l-top_menu-v2 .logo-container .glyph { grid-area: logo-container-a; }
+.l-top_menu-v2 .logo-container .logo { grid-area: logo-container-b; justify-self: center; align-self: center;  height: 60%; width: 110px}
+.l-top_menu-v2 .logo-container::after { grid-area: logo-container-c; justify-self: center; }
+
+.l-top_menu-v2 .logo-container::after {
+    content: attr(title);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: uppercase;
+	font-size: 1.35em;
+	font-weight: 700;
+    color: #ffffff66;
+}
