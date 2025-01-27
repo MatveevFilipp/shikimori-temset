@@ -12,6 +12,7 @@ body{
 }
 .l-page {
 	background-color: #fffffff0;
+	backdrop-filter: blur(2px);
 	box-shadow: 0px 0px 4px 1px #00000040;
 	margin-top: 16px;
 	padding-left: 30px;
