@@ -175,9 +175,16 @@ body{
 .block.achievements .cc-2 .c-column:nth-child(4) .cc-authors .b-achievement{
 	margin-right: 1%;
 }
-.block.achievements .cc-2 .c-column:nth-child(4) .cc-authors .b-achievement{
-	margin-right: 1%;
-}
 .block.achievements .cc-2 .c-column:nth-child(4) .cc-authors .b-achievement:last-child{
 	margin-right: 0;
 } 
+
+@media screen and (max-width: 767px) {
+	.block.achievements .cc-2 .c-column:nth-child(4) .cc-authors {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.p-profiles-show .achievements .cc-authors .b-achievement {
+		width: 32.3333333333%;
+	}
+}
