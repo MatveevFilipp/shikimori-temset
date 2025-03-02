@@ -14,7 +14,7 @@
 
 .cc-favourites .cover .image-decor .image-cutter picture {
   position: relative;
-  z-index: 12;
+  /*z-index: 12;*/
 }
 
 .cc-favourites .cover .image-decor:hover .image-cutter {
